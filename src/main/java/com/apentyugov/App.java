@@ -30,7 +30,7 @@ public class App {
             }
 
         } catch (NumberFormatException e) {
-            throw new NumberFormatException("Number must be Integer");
+            throw new NumberFormatException("Input must be a number");
         }
 
     }
