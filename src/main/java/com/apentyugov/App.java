@@ -19,9 +19,12 @@ public class App {
         try {
             long i = Long.parseLong(input);
             if (i > 0) {
-                System.out.println("Result of \"method one\": " + methodOne(i));
-                System.out.println("Result of \"method two\": " + methodTwo(i));
-                System.out.println("Result of \"method three\": " + methodThree(i));
+                for (long j = 1; j <= i; j++) {
+                    System.out.println(methodOne(j));
+//                    System.out.println("Result of \"method one\": " + methodOne(j));
+//                    System.out.println("Result of \"method two\": " + methodTwo(j));
+//                    System.out.println("Result of \"method three\": " + methodThree(j));
+                }
             } else {
                 throw new IllegalArgumentException("Number must be greater than 0");
             }
